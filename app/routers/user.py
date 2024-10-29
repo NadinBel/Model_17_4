@@ -62,7 +62,7 @@ async def update_user(session: SessionDep, user_id: int, username: str, firstnam
     session.commit()
     return {
         'status_code': status.HTTP_200_OK,
-        'transaction': 'Category update is successful'
+        'transaction': 'User update is successful'
     }
 
 @router.delete('/delete')
